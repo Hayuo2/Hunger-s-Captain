@@ -92,24 +92,24 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 # Heroku Database
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'd5sr7ggq9t0rgd',
-#         'USER': 'uflgqyywwqoeci',
-#         'PORT': 5432,
-#         'HOST': 'ec2-50-16-241-192.compute-1.amazonaws.com',
-#         'PASSWORD': 'ceb06dfbad9a0483c43ddd18fd20784d9c01522bbc1c17fa1876da9a0fe101ab',
-#     }
-# }
-
-# Local Database
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd81p8l89vfgmdc',
+        'USER': 'nesvhkdysfyxsb',
+        'PORT': 5432,
+        'HOST': 'ec2-44-198-196-149.compute-1.amazonaws.com',
+        'PASSWORD': 'fa3e2fe0e91036d3175be0312d00c11ca9292baf1e85f401c413c61cf3f901a6',
     }
 }
+
+# Local Database
+# DATABASES = {
+#     # 'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # Heroku PostgreSQL Database
 django_heroku.settings(locals())
@@ -160,9 +160,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 cloudinary.config(
-    cloud_name="dnzcxphxl",
-    api_key="227674966312587",
-    api_secret="f8-ZJ1UP04yAgpmuD4zo5EUFPq0",
+    cloud_name="djlnfxejk",
+    api_key="925574913183248",
+    api_secret="GpTrHVvLb2eC4CE_eaXntnm6nfY",
     secure=True
 )
 
