@@ -8,7 +8,7 @@ const Router = () => {
     <>
       <Switch>
         <Route exact path={"/"} component={Home} />
-        <Route exact path={"addtocart"} component={Addtocart} />
+        <Route exact path={"/addtocart"} component={Addtocart} />
       </Switch>
     </>
   );

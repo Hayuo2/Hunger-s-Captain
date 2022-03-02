@@ -12,6 +12,7 @@ import { fetchFromLocalStorage } from "../reducks/carts/operations";
 import queryString from "query-string";
 import line from "../assets/img/line.png";
 import { push } from "connected-react-router";
+import Footer1 from "../components/Common/Footer1";
 
 const Home = () => {
   const parsed = queryString.parse(window.location.search);
@@ -95,8 +96,6 @@ const Home = () => {
                 </a>
               </button>
             </div>
-
-  
           </>
         )}
         <ul class="items">{items && items.map((item) => showItem(item))}</ul>
@@ -107,6 +106,7 @@ const Home = () => {
         showCartList={showCartList}
         setShowCartList={setShowCartList}
       />
+      <Footer1 />
 
       {showWriteReview && (
         <PopupWriteRevew

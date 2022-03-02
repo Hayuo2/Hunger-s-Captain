@@ -1,14 +1,14 @@
-const initialState = { 
-    posts: {
-        list: []
-    },
-    items: {
-        list: []
-    },
-    carts: {
-        list: [],
-        subtotal: 0
-    }
+const initialState = {
+  posts: {
+    list: [],
+  },
+  items: {
+    list: [],
+  },
+  carts: {
+    list: [],
+    subtotal: 0,
+  },
 };
 
-export default initialState
+export default initialState;
